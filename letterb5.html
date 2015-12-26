@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Tela 3</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="tela1.css" type="text/css">
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jcanvas.min.js"></script>
+
+
+
+	<style>
+	#canvas{
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border: 6px solid #4169E1;
+		-webkit-border-radius: 100px;
+		background: #87CEFA	;
+	}
+
+	.next{
+    position: absolute;
+    top: 520px;
+    right: 230px;
+  	}
+
+  	.next :hover {
+    background-image: url("sparkle.gif");
+    background-repeat: no-repeat;
+	-webkit-border-radius: 60px;
+
+}
+
+.next :active {
+    background-color: orange;
+} 
+
+  	.back{
+    position: absolute;
+    top: 520px;
+    left: 230px;
+  	}
+		.back :hover {
+    background-image: url("sparkle.gif");
+    background-repeat: no-repeat;
+	-webkit-border-radius: 60px;
+
+}
+.back :active {
+    background-color: orange;
+} 
+  	
+	</style>
+	
+</head>
+
+	<body>
+	<canvas id="canvas" width="850" height="490"> </canvas>
+	<audio id="myaudio"> 
+		<source src="recording/5.mp3"></source>
+			Audio
+	</audio>
+
+	<a class="next" href="letterb6.html"> <img src="pushup.png" width="120px" height="120px"></a>
+	<a class="back" href="letterb4.html"> <img src="pushdown.ico" width="120px" height="120px"></a>
+
+	<script>
+	var audio = $('#myaudio')[0];
+	
+		
+	$('canvas').addLayer({
+		type: 'text',
+		name: 'foot',
+		groups: 'letterb5',
+		fillStyle: 'lime',
+		fontFamily: 'Helvetica Neue',
+		fontSize: '100pt',
+		text: 'Foot',
+		x:160, y:230,
+	})
+
+	$('canvas').addLayer({
+		type:'text',
+		name: 'ball',
+		groups: 'letterb5',
+		fillStyle: 'lime',
+		fontFamily: 'Helvetica Neue',
+		fontSize: '100pt',
+		text: 'all',
+		x:460, y:230,
+		
+	})
+
+	$('canvas').addLayer({
+		type: 'image',
+		groups: 'letterb5',
+		name: 'ballie',
+		source: 'football.png',
+		width: 350,
+		height: 300,
+		x:700, y:240,
+	})
+	
+
+		$('canvas').addLayer({
+		type: 'text',
+		name: 'b',
+		groups: 'letterb5',
+		fillStyle: '#FF4500',
+		fontFamily: 'Helvetica Neue',
+		fontSize: '140pt',
+		text: 'b',
+		x:345, y:215, 
+		click: function() {
+	    audio.play();
+  	},
+	})
+
+.drawLayers();		
+
+
+		$('canvas').addLayer({
+		name: 'birdiel',
+		type: 'image',
+		source: 'greenhand.png',
+		width: 150,
+		height: 150,
+		x: 480, y: 0,
+		
+	})
+		
+
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 2000, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		
+$('canvas').delayLayer('birdiel', 80);
+	
+$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:100,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		}); 
+		
+		$('canvas').delayLayer('birdiel', 10);
+	
+	$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 500, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:100,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		}); 	
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 500, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:100,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 500, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:100,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 500, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:100,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  	x:350, y:120,
+		}, 500, function(){
+		$('canvas').animateLayer('birdiel', {
+		function(){
+  		//function
+		},
+		
+		});	
+		});
+		$('canvas')
+	.animateLayer('birdiel', {
+	  		x:80, y:0,
+		}, 500, function(layer) {
+	  	// Callback function
+	  	$(this).animateLayer(layer, {
+	   
+	   function(){
+	  // Callback function
+		},
+	  	}, 'fast');
+		});
+	
+		
+
+	</script>
+	</body>
+</html>
